@@ -1,0 +1,12 @@
+(define/contract (unequal-triplets nums)
+  (-> (listof exact-integer?) exact-integer?)
+ (let* ([length (length nums)]
+         [counter 0])
+    (for ([i (range length)])
+      (for ([j (range (add1 i) length)])
+        (for ([k (range (add1 j) length)])
+          (when (and (not (= (list-ref nums i) (list-ref nums j)))
+                     (not (= (list-ref nums j) (list-ref nums k)))
+                     (not (= (list-ref nums i) (list-ref nums k))))
+            (set! counter (add1 counter))))))
+    counter))
