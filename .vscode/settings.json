@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.embeddedhtml": "html",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "vector": "cpp"
     }
 }
