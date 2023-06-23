@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def maximumValue(self, strs: List[str]) -> int:
         lenth : int = len(strs)
