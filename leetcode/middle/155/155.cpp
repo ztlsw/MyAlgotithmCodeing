@@ -1,3 +1,11 @@
+#include<iostream>
+#include<vector>
+#include<set>
+#include<string>
+#include<queue>
+#include<cstring>
+#include<stack>
+using namespace std;
 class MinStack 
 {
     private:
