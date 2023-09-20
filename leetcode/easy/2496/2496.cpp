@@ -26,7 +26,7 @@ public:
                 }
                 num = num*10+strs[i][j]-'0';
             }
-            if(flag) maxx = max(maxx,strs[i].size());
+            if(flag) maxx = max(maxx,(int)strs[i].size());
             else maxx = max(maxx,num);
         }
         return maxx;
